@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Fun Facts</title>
+</head>
+<body style="text-align:center; font-family:sans-serif;">
+
+    <h1>🎉 Fun Fact Generator</h1>
+
+    <p id="fact">Click the button to see a fun fact!</p>
+
+    <button onclick="showFact()">Get Fun Fact</button>
+
+    <script>
+        const facts = [
+            "Octopus has 3 hearts 💙",
+            "Bananas are berries 🍌",
+            "Honey never spoils 🍯",
+            "Sharks existed before trees 🦈",
+            "Your brain uses 20% energy 🧠"
+        ];
+
+        function showFact() {
+            const random = Math.floor(Math.random() * facts.length);
+            document.getElementById("fact").innerText = facts[random];
+        }
+    </script>
+
+</body>
+</html>
